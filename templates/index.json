@@ -1,25 +1,22 @@
 {
   "sections": {
-    "b9e39fb9-75c2-4274-b82a-e5339e6dc8d5": {
+    "8990f82b-9e60-415d-9f48-6d0207e56502": {
       "type": "video-banner",
       "settings": {
-        "video_url": "",
-        "video_heading": "Endless Possibility",
-        "video_text": "Product Name",
-        "video_btn_text": "Buy now",
-        "heading_font_size": 25,
-        "paragraph_font_size": 16,
-        "video_btn_link": "",
-        "desktop_height": "750",
-        "mobile_height": "600",
-        "heading_font_size_mobile": 30,
-        "paragraph_font_size_mobile": 16,
-        "show_overlay": true
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify:\/\/files\/videos\/dragon.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
       }
     },
     "e5449b44-1f85-4c58-9945-6f3c834cc27e": {
       "type": "video",
-      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -111,7 +108,7 @@
     }
   },
   "order": [
-    "b9e39fb9-75c2-4274-b82a-e5339e6dc8d5",
+    "8990f82b-9e60-415d-9f48-6d0207e56502",
     "e5449b44-1f85-4c58-9945-6f3c834cc27e",
     "image_banner",
     "featured_collection"
