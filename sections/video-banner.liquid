@@ -69,13 +69,10 @@
             {%- endif -%}
           </a>
         {%- else -%}
-          {%- if section.settings.video == null and section.settings.video_url != null -%}
-  {%- else -%}
-    {{
-      section.settings.video
-    | video_tag: loop: section.settings.enable_video_looping, autoplay: true, muted: true
-    }}
-  {%- endif -%}
+          {{
+  section.settings.video
+| video_tag: '1100x', loop: section.settings.enable_video_looping, autoplay: true, muted: true
+}}
         {%- endif -%}
       </div>
     </noscript>
