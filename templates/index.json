@@ -1,5 +1,22 @@
 {
   "sections": {
+    "b9e39fb9-75c2-4274-b82a-e5339e6dc8d5": {
+      "type": "video-banner",
+      "settings": {
+        "video_url": "",
+        "video_heading": "Endless Possibility",
+        "video_text": "Product Name",
+        "video_btn_text": "Buy now",
+        "heading_font_size": 25,
+        "paragraph_font_size": 16,
+        "video_btn_link": "",
+        "desktop_height": "750",
+        "mobile_height": "600",
+        "heading_font_size_mobile": 30,
+        "paragraph_font_size_mobile": 16,
+        "show_overlay": true
+      }
+    },
     "e5449b44-1f85-4c58-9945-6f3c834cc27e": {
       "type": "video",
       "disabled": true,
@@ -14,23 +31,6 @@
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 36
-      }
-    },
-    "d0e5d8f3-fd2d-41a3-828c-4f046f931587": {
-      "type": "video-banner",
-      "settings": {
-        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/eeae571915064d9094de0f9e0f0811e0.mp4",
-        "video_heading": "Endless Possibility",
-        "video_text": "Product Name",
-        "video_btn_text": "Buy now",
-        "heading_font_size": 25,
-        "paragraph_font_size": 16,
-        "video_btn_link": "",
-        "desktop_height": "750",
-        "mobile_height": "600",
-        "heading_font_size_mobile": 30,
-        "paragraph_font_size_mobile": 16,
-        "show_overlay": true
       }
     },
     "image_banner": {
@@ -111,8 +111,8 @@
     }
   },
   "order": [
+    "b9e39fb9-75c2-4274-b82a-e5339e6dc8d5",
     "e5449b44-1f85-4c58-9945-6f3c834cc27e",
-    "d0e5d8f3-fd2d-41a3-828c-4f046f931587",
     "image_banner",
     "featured_collection"
   ]
