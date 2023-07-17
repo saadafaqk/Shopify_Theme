@@ -1,4 +1,4 @@
-{{ 'video-section.css' | asset_url | stylesheet_tag }}
+{{ 'video-banner-section.css' | asset_url | stylesheet_tag }}
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
@@ -43,7 +43,7 @@
 {%- endcapture -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
+  <div class="video-banner-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
     <div {% if section.settings.full_width %}class="page-width"{% endif %}>
       {%- unless section.settings.heading == blank -%}
         <div class="title-wrapper title-wrapper--no-top-margin{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
@@ -52,9 +52,9 @@
       {%- endunless -%}
     </div>
     <noscript>
-      <div class="video-section__media" {% if poster != null %}style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"{% endif %}>
+      <div class="video-banner-section__media" {% if poster != null %}style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"{% endif %}>
         {%- if section.settings.video == null and section.settings.video_url != null -%}
-          <a href="{{ section.settings.video_url }}" class="video-section__poster media media--transparent{% if poster == null %} video-section__placeholder{% endif %}">
+          <a href="{{ section.settings.video_url }}" class="video-banner-section__poster media media--transparent{% if poster == null %} video-banner-section__placeholder{% endif %}">
             {%- if poster != null -%}
               {{
                  poster
@@ -76,12 +76,12 @@
       </div>
     </noscript>
     <deferred-media
-      class="video-section__media deferred-media no-js-hidden gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if fix_ratio %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+      class="video-banner-section__media deferred-media no-js-hidden gradient global-media-settings{% if section.settings.full_width %} global-media-settings--full-width{% endif %}{% if fix_ratio %} media-fit-cover{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
       data-media-id="{{ video_id }}"
       {% if poster != null %}style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"{% endif %}>
       <button
         id="Deferred-Poster-Modal-{{ video_id }}"
-        class="video-section__poster media deferred-media__poster media--landscape"
+        class="video-banner-section__poster media deferred-media__poster media--landscape"
         type="button"
         aria-label="{{ alt }}">
         {%- if poster != null -%}

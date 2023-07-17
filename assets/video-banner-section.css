@@ -1,0 +1,49 @@
+.video-banner-section__media {
+    --ratio-percent: 56.25%;
+    position: relative;
+    padding-bottom: calc(var(--ratio-percent) - var(--media-border-width));
+  }
+  
+  /* Needed for gradient continuity with or without animation so that transparent PNG images come up as we would expect */
+  .scroll-trigger:where(.gradient.video-banner-section__media) {
+    background: transparent;
+  }
+  
+  .video-banner-section__media.global-media-settings--full-width {
+    padding-bottom: var(--ratio-percent);
+  }
+  
+  .video-banner-section__media.deferred-media {
+    box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
+      rgba(var(--color-shadow), var(--media-shadow-opacity));
+  }
+  
+  .video-banner-section__media.deferred-media:after {
+    content: none;
+  }
+  
+  .video-banner-section__poster.deferred-media__poster:focus {
+    outline-offset: 0.3rem;
+  }
+  
+  .video-banner-section__media iframe {
+    background-color: rgba(var(--color-foreground), 0.03);
+    border: 0;
+  }
+  
+  .video-banner-section__poster,
+  .video-banner-section__media iframe,
+  .video-banner-section__media video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video-banner-section__media video {
+    background: #000000;
+  }
+  
+  .video-banner-section__media.media-fit-cover video {
+    object-fit: cover;
+  }
+  
