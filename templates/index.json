@@ -1,7 +1,23 @@
 {
   "sections": {
+    "e5449b44-1f85-4c58-9945-6f3c834cc27e": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify:\/\/files\/videos\/dragon.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
     "d0e5d8f3-fd2d-41a3-828c-4f046f931587": {
       "type": "video-banner",
+      "disabled": true,
       "settings": {
         "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/eeae571915064d9094de0f9e0f0811e0.mp4",
         "video_heading": "Endless Possibility",
@@ -95,6 +111,7 @@
     }
   },
   "order": [
+    "e5449b44-1f85-4c58-9945-6f3c834cc27e",
     "d0e5d8f3-fd2d-41a3-828c-4f046f931587",
     "image_banner",
     "featured_collection"
